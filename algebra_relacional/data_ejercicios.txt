@@ -1,0 +1,51 @@
+group: ejercicios algebra relacional
+
+
+ARTICULOS = {
+	nro_art:number, nombre_art:string, color:string
+	1             , 'goma'           , 'rojo'        
+	4             , 'asdf'           , 'verde'     
+	10            , 'sdsdasdf'       , 'amarillo'
+	34            , 'dasdws'         , 'naranja'   
+	33            , 'foo foo'        , 'celeste'   
+	12            , 'dfdawdad'       , 'amarillo'  
+	123           , 'dsdasd'         , 'violeta'
+	11            , 'sxasdwgf'       , 'rosa'
+	19            , 'sdwdwdw'        , 'azul'
+}
+
+PROVEEDORES = {
+	nro_proveedor:number, apellido:string
+	1                   , 'Lennon'       
+	2                   , 'Ledesma'      
+	128                 , 'Lebowski'     
+	3                   , 'Gardel'       
+	4                   , 'Mars'         
+	5                   , 'Hendrix'      
+	6                   , 'Messi'        
+	7                   , 'Ronson'       
+	328                 , 'Francella'    
+	20                  , 'Homme'        
+}
+
+PEDIDOS = {
+	nro_proveedor:number, nro_articulo:number, cantidad:number
+	2                   , 34                 , 10             
+	128                 , 34                 , 12             
+	2                   , 4                  , 10             
+	2                   , 10                 , 10             
+	328                 , 12                 , 2              
+	328                 , 19                 , 403            
+	328                 , 12                 , 15             
+	5                   , 123                , 649            
+	7                   , 4                  , 10             
+	7                   , 10                 , 10             
+	7                   , 12                 , 2              
+	7                   , 19                 , 403            
+	7                   , 1                  , 15             
+	7                   , 123                , 600            
+	7                   , 34                 , 200
+	7                   , 33                 , 78     	
+	7                   , 11                 , 100
+	1                   , 33                 , 15          	
+}

@@ -14,3 +14,11 @@ relacional de túplas:
 ```
 π nro_proveedor σ PEDIDOS.nro_articulo = 34 (PEDIDOS)
 ```
+
+2. Obtener el número y el apellido de aquellos proveedores que suministran el producto 34 o el
+producto 12.
+
+```
+π nro_proveedor, apellido σ PEDIDOS.nro_articulo = 34 ∨ PEDIDOS.nro_articulo = 12 (PEDIDOS⨝PROVEEDORES)
+```
+
