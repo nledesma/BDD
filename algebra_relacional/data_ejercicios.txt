@@ -2,14 +2,14 @@ group: ejercicios algebra relacional
 
 
 ARTICULOS = {
-	nro_art:number, nombre_art:string, color:string
+	nro_articulo:number, nombre_art:string, color:string
 	1             , 'goma'           , 'rojo'        
 	4             , 'asdf'           , 'verde'     
 	10            , 'sdsdasdf'       , 'amarillo'
-	34            , 'dasdws'         , 'naranja'   
+	34            , 'tuercas'        , 'naranja'   
 	33            , 'foo foo'        , 'celeste'   
 	12            , 'dfdawdad'       , 'amarillo'  
-	123           , 'dsdasd'         , 'violeta'
+	123           , 'tuecas'         , 'violeta'
 	11            , 'sxasdwgf'       , 'rosa'
 	19            , 'sdwdwdw'        , 'azul'
 }
