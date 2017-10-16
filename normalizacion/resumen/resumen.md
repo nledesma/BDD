@@ -36,6 +36,10 @@ Ej:
 
 En este caso el atributo _nombre_depto_ depende parcialmente de la clave primaria _(nombre_profesor, asignatura)_, porque sólo depende da la _asignatura_.
 
+### Atributos primos:
+
+Un **atributo primo** es un atributo que **forma parte de una clave candidata**.
+
 Por definición, _asignatura_ es un **atributo primo** de la relación, por formar parte de la clave primaria.
 
 ## 2da Forma Normal:
@@ -62,7 +66,7 @@ Una descomposición se llama **equivalente** cuando:
 
 ## 3ra Forma Normal:
 
-Es cuando un atributo **no primo** (o sea que no forma parte de la PK), depende funcionalmente de otro atributo **no primo**. Esto se denomina como una **dependencia funcional transitiva**.
+Es cuando un atributo **no primo** (o sea que no forma parte de la PK, ni de alguna clave candidata), depende funcionalmente de otro atributo **no primo**. Esto se denomina como una **dependencia funcional transitiva**.
 
 Ej:
 
@@ -70,8 +74,6 @@ Ej:
 </div>
 
 En este caso, la clave primaria sería _(nro_factura, nro_item)_.
-
-### Dependencia funcional transitiva
 
 El atributo _cod_producto_ depende funcionalmente de la clave primaria (completa), pero a su vez también _nombre_producto_ depende funcionalmente de _cod_producto_. Esto implica una **dependencia funcional transitiva.**
 
@@ -82,3 +84,4 @@ Para resolver este caso se haría la siguiente descomposición:
 </div>
 
 Cabe mencionar que en esta descomposición _cod_producto_ termina siendo una FK de la nueva relación.
+
