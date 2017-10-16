@@ -88,7 +88,7 @@ Un esquema que respeta la 3FN es un esquema **sin dependencias funcionales trans
 
 Cabe mencionar que en esta descomposición _cod_producto_ termina siendo una FK de la nueva relación.
 
-## Forma Normal de Boyce-Codd (FNBC)
+## Forma Normal de Boyce-Codd (FNBC):
 
 La condición es similar a la de la 2FN, con la salvedad de que esta **no permite dependencias parciales de atributos primos tampoco**.
 
@@ -110,3 +110,30 @@ Esto se resolvería con el siguiente esquema:
 </div>
 
 Como observación, en esta descomposición se pierde la dependencia funcional _(alumno, materia)_ --> _(profesor)_
+
+## Dependencias multivaluada y 4ta Forma Normal:
+
+Ej de dependencias multivaluadas:
+
+<div style="text-align:center">
+<img src="images/DFM.png" alt="DFM" style="width: 500px;"/>
+</div>
+
+En este caso **un conjunto de valores del atributo _nombre_producto_ dependen funcionalmente de un valor del atributo _descripcion_promo_**:
+
+Ej: Las salchichas, el pan y la mayonesa forman parte de la promo Fiesta-Pancho.
+
+Y si bien es menos obvio, lo mismo sucede con _(nro_factura, nombre_cliente)_ que dependen multivaluadamente de _descripcion_promo_.
+
+La **4FN** establece que no puede haber dependencias multivaluadas de atributos que no sean superclave.
+
+En el caso anterior, _descripcion_promo_ no es un atributo superclave, ya que por sí solo no identifica unívocamente a un registro de la tabla. Y los conjuntos _(nro_factura, nombre_cliente)_ y _nombre_producto_ dependen multivaluadamente de él.
+
+El siguiente esquema sí respetaria la cuarta forma normal:
+
+<div style="text-align:center">
+<img src="images/4FN-2.png" alt="4FN-2" style="width: 200px;"/>
+<img src="images/4FN-3.png" alt="4FN-3" style="width: 200px;"/>
+<img src="images/4FN-1.png" alt="4FN-1" style="width: 250px;"/>
+</div>
+
