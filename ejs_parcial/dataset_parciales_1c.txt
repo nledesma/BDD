@@ -1,0 +1,72 @@
+-- this is an example
+
+group: Dataset parciales del 1er cuatrimestre
+
+
+CLIENTES = { 
+  cod_cliente:number,nombre:string,tipo_cliente:string
+1000,"Fritz England",2
+2000,"Quinn Valencia",2
+3000,"John Smith",1
+4000,"Timothy Caldwell",2
+5000,"Leo Talley",2
+}
+
+PRODUCTOS = {
+nro_prod,descripcion,unidad_medida,precio
+1,goma,m,20
+5,tijera,m,30
+17,voligoma,m,20
+23,pluma,mm,30
+29,lapiz,m,30
+37,resaltador,m,40
+}
+
+ENVIOS = {
+cod_envio,cod_cliente,direccion,ciudad,provincia
+5,1000,"b 200","parana",C
+6,4000,"b 200","ushuaia",E
+7,1000,"a 100","bs as",E
+10,1000,"a 100","santa fe",B
+12,1000,"a 100","bs as",C
+14,4000,"e 500","parana",C
+16,5000,"d 400","bs as",C
+23,5000,"a 100","bs as",D
+25,3000,"d 400","rosario",A
+35,2000,"b 200","parana",E
+37,5000,"b 200","santa fe",B
+38,1000,"e 500","parana",E
+39,5000,"d 400","rosario",C
+44,5000,"a 100","rosario",B
+46,1000,"d 400","parana",A
+48,4000,"d 400","bs as",A
+49,5000,"e 500","rosario",C
+}
+
+DETALLES_ENVIOS = {
+id,cod_envio,nro_prod,cantidad_enviada
+1,27,37,11
+2,5,37,12
+3,5,23,12
+4,38,23,13
+5,38,29,13
+6,16,29,14
+7,16,1,14
+8,12,1,15
+9,12,17,15
+10,37,17,16
+11,6,71,17
+12,23,37,18
+13,35,23,19
+14,25,29,20
+15,14,1,21
+16,48,17,22
+17,37,5,23
+18,10,5,24
+19,49,5,25
+20,39,37,26
+21,6,37,27
+22,7,5,28
+23,46,5,29
+24,44,5,30
+}
