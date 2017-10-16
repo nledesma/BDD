@@ -18,7 +18,7 @@ Se muda el atributo multivaluado a una nueva relación junto con la clave de la 
 
 ### Dependencia funcional
 
-Hay **DF** cuando en una relación, dados dos conjuntos de atributos X e Y, 2 tuplas con igual valor en los atributos de X deben tener igual valor en el conjunto de atributos Y
+Hay **DF** cuando en una relación, dados dos conjuntos de atributos X e Y, 2 tuplas con igual valor en los atributos del conjunto X necesariamente tienen también igual valor en los atributos del conjunto Y
 
 ### Dependencia funcional parcial
 
