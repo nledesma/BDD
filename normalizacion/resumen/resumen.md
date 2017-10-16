@@ -90,4 +90,6 @@ Cabe mencionar que en esta descomposición _cod_producto_ termina siendo una FK 
 
 ## Forma Normal de Boyce-Codd (FNBC)
 
-La condición es similar a la de la 3FN, con la salvedad de que esta no permite dependencias transitivas entre atributos primos tampoco. 
+La condición es similar a la de la 3FN, con la salvedad de que esta **no permite dependencias transitivas entre atributos primos tampoco**.
+
+_Vale la pena aclarar que los atributos primos no necesariamente forman parte de la PK, pueden ser miembros de una clave candidata no primaria._
