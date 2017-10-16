@@ -14,11 +14,11 @@ Una posible solución:
 <div style="text-align:center">
 <img src="1FN-1.png" alt="FN1-1" style="width: 280px;"/>
 <img src="1FN-2.png" alt="FN1-2" style="width: 280px;"/>
-</div>
 
 Se muda el atributo multivaluado a una nueva relación junto con la clave de la relación original.
+</div>
 
-### Dependencia funcional
+## Dependencia funcional
 
 Hay **DF** cuando en una relación, dados dos conjuntos de atributos X e Y, 2 tuplas con igual valor en los atributos del conjunto X necesariamente tienen también igual valor en los atributos del conjunto Y
 
@@ -61,4 +61,10 @@ Es cuando un atributo **no primo** (o sea que no forma parte de la PK), depende 
 
 Ej:
 
-<div style="text-align:center"><img src="DFT.png" alt="DFT" style="width: 600px;align:middle;"/></div>
+<div style="text-align:center"><img src="DFT.png" alt="DFT" style="width: 600px;align:middle;"/>
+
+</div>
+
+En este caso, la clave primaria sería _(nro_factura, nro_item)_.
+
+El atributo _nro_producto_ depende funcionalmente de la clave primaria (completa), pero a su vez también _nombre_producto_ depende funcionalmente de _nro_producto_. Esto implica una **dependencia funcional transitiva.**
