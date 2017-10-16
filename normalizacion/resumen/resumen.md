@@ -46,7 +46,7 @@ Por definición, _asignatura_ es un **atributo primo** de la relación, por form
 
 Una relación esta en 2da forma normal cuando sus atributos **no primos** tienen **sólo dependencias funcionales completas con la clave primaria**. 
 
-En resumen, ningún atributo que no forme parte de la clave primaria puede depender parcialmente de la clave primaria.
+En resumen, ningún atributo excluido de las claves candidatas puede depender parcialmente de la clave primaria.
 
 El ejemplo de la **DFP** anterior se respuelve separando la relacion en las dos siguientes:
 
