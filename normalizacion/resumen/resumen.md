@@ -7,15 +7,15 @@ Se dice que un esquema relacional está en la primera forma normal cuando los ca
 Ej de un esquema que NO está en la primera forma normal:
 
 <div style="text-align:center">
-<img src="no-1FN.png" alt="NO-1FN" style="width: 400px;"/>
+<img src="images/no-1FN.png" alt="NO-1FN" style="width: 400px;"/>
 </div>
 
 
 Una posible solución:
 
 <div style="text-align:center">
-<img src="1FN-1.png" alt="FN1-1" style="width: 280px;"/>
-<img src="1FN-2.png" alt="FN1-2" style="width: 280px;"/>
+<img src="images/1FN-1.png" alt="FN1-1" style="width: 280px;"/>
+<img src="images/1FN-2.png" alt="FN1-2" style="width: 280px;"/>
 
 Se muda el atributo multivaluado a una nueva relación junto con la clave de la relación original.
 </div>
@@ -31,7 +31,7 @@ Hay **DFP** cuando un atributo depende de un subconjunto del conjunto de la clav
 Ej:
 
 <div style="text-align:center">
-<img src="DFP.png" alt="DFP" style="width: 280px;"/>
+<img src="images/DFP.png" alt="DFP" style="width: 280px;"/>
 </div>
 
 En este caso el atributo _nombre_depto_ depende parcialmente de la clave primaria _(nombre_profesor, asignatura)_, porque sólo depende da la _asignatura_.
@@ -47,7 +47,7 @@ En resumen, ningún atributo que no forme parte de la clave primaria puede depen
 El ejemplo de la **DFP** anterior se respuelve separando la relacion en las dos siguientes:
 
 <div style="text-align:center">
-<img src="2FN.png" alt="DFP" style="width: 350px;"/>
+<img src="images/2FN.png" alt="DFP" style="width: 350px;"/>
 </div>
 
 
@@ -66,11 +66,12 @@ Es cuando un atributo **no primo** (o sea que no forma parte de la PK), depende 
 
 Ej:
 
-<div style="text-align:center"><img src="DFT.png" alt="DFT" style="width: 600px;align:middle;"/>
+<div style="text-align:center"><img src="images/DFT.png" alt="DFT" style="width: 600px;align:middle;"/>
 </div>
 
 En este caso, la clave primaria sería _(nro_factura, nro_item)_.
 
 El atributo _nro_producto_ depende funcionalmente de la clave primaria (completa), pero a su vez también _nombre_producto_ depende funcionalmente de _nro_producto_. Esto implica una **dependencia funcional transitiva.**
+
 
 
