@@ -53,4 +53,4 @@ Una descomposición se llama **equivalente** cuando:
 - **Preservación de las dependencias:** Todas las dependencias funcionales de la relación original se pueden inferir a partir de las relaciones de la descomposición.
 - **Preservación de la información:** No hay pérdida de información respecto de la relación original.
 
-## 3ra Forma Normal
+## 3ra Forma Normal:
