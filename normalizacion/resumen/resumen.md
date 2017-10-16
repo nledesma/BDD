@@ -71,7 +71,13 @@ Ej:
 
 En este caso, la clave primaria sería _(nro_factura, nro_item)_.
 
+### Dependencia funcional transitiva
+
 El atributo _nro_producto_ depende funcionalmente de la clave primaria (completa), pero a su vez también _nombre_producto_ depende funcionalmente de _nro_producto_. Esto implica una **dependencia funcional transitiva.**
 
+Para resolver este caso se haría la siguiente descomposición:
 
+<div style="text-align:center">
+<img src="images/3FN.png" alt="DFP" style="width: 350px;"/>
+</div>
 
