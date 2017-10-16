@@ -1,10 +1,10 @@
 # Formas Normales
 
-## 1ra Forma Normal:
+## 1ra Forma Normal
 
 Se dice que un esquema relacional está en la primera forma normal cuando los campos de todas sus relaciones son atómicos y monovaluados.
 
-Ej de un esquema que NO está en la primera forma normal:
+Ej de un esquema que **no** está en la primera forma normal:
 
 <div style="text-align:center">
 <img src="images/no-1FN.png" alt="NO-1FN" style="width: 400px;"/>
@@ -36,13 +36,13 @@ Ej:
 
 En este caso el atributo _nombre_depto_ depende parcialmente de la clave primaria _(nombre_profesor, asignatura)_, porque sólo depende da la _asignatura_.
 
-### Atributos primos:
+### Atributos primos
 
 Un **atributo primo** es un atributo que **forma parte de una clave candidata**.
 
 Por definición, _asignatura_ es un **atributo primo** de la relación, por formar parte de la clave primaria.
 
-## 2da Forma Normal:
+## 2da Forma Normal
 
 Una relación esta en 2da forma normal cuando sus atributos **no primos** tienen **sólo dependencias funcionales completas con la clave primaria**. 
 
@@ -88,7 +88,7 @@ Un esquema que respeta la 3FN es un esquema **sin dependencias funcionales trans
 
 Cabe mencionar que en esta descomposición _cod_producto_ termina siendo una FK de la nueva relación.
 
-## Forma Normal de Boyce-Codd (FNBC):
+## Forma Normal de Boyce-Codd (FNBC)
 
 La condición es similar a la de la 2FN, con la salvedad de que esta **no permite dependencias parciales de atributos primos tampoco**.
 
@@ -111,7 +111,7 @@ Esto se resolvería con el siguiente esquema:
 
 Como observación, en esta descomposición se pierde la dependencia funcional _(alumno, materia)_ --> _(profesor)_
 
-## Dependencias multivaluada y 4ta Forma Normal:
+## Dependencias multivaluada y 4ta Forma Normal
 
 Ej de dependencias multivaluadas:
 
@@ -127,7 +127,7 @@ Y si bien es menos obvio, lo mismo sucede con _(nro_factura, nombre_cliente)_ qu
 
 La **4FN** establece que no puede haber dependencias multivaluadas de atributos que no sean superclave.
 
-En el caso anterior, _descripcion_promo_ no es un atributo superclave, ya que por sí solo no identifica unívocamente a un registro de la tabla. Y los conjuntos _(nro_factura, nombre_cliente)_ y _nombre_producto_ dependen multivaluadamente de él.
+En el caso anterior, **_descripcion_promo_** no es un atributo superclave, ya que por sí solo **no identifica unívocamente a un registro de la tabla**. Y los conjuntos _(nro_factura, nombre_cliente)_ y _nombre_producto_ dependen multivaluadamente de él.
 
 El siguiente esquema sí respetaria la cuarta forma normal:
 
@@ -160,3 +160,14 @@ El siguiente esquema es un ejemplo de esquema que **respeta la quinta forma norm
 <img src="images/5FN-3.png" alt="4FN-3" style="width: 200px;"/>
 <img src="images/5FN-1.png" alt="4FN-1" style="width: 200px;"/>
 </div>
+
+## Síntesis
+
+| Forma normal | Condición | 
+|---|---|
+| 1FN | Todos los campos son atómicos y monovaluados |
+| 2FN | Todos los atributos no primos dependen funcionalmente en forma completa con la clave primaria. |
+| 3FN | No hay dependencias transitivas de atributos no primos / Ningún atributo no primo depende funcionalmente de una clave candidata (no primaria) |
+| FNBC | Ningún atributo primo o no primo depende parcialmente de una clave candidata. |
+| 4FN | Ningún atributo depende multivaluadamente de un atributo que no sea superclave. |
+| 5FN | Ningún atributo tiene dependencias de junta con atributos que no sean superclave / La relación no se puede descomponer en más relaciones |
