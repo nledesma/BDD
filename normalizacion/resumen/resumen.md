@@ -97,9 +97,14 @@ _Vale la pena aclarar que los atributos primos no necesariamente forman parte de
 El siguiente ejemplo **no** respeta la forma normal de Boyce-Codd:
 
 <div style="text-align:center">
-<img src="images/no-FNBC.png" alt="DFP" style="width: 350px;"/>
+<img src="images/no-FNBC.png" alt="DFP" style="width: 380px;"/>
 </div>
 
 En este caso _(alumno, materia)_ y _(profesor, materia)_ son claves candidatas. No importa la clave primaria que se elija, **_alumno_ o _profesor_ dependería parcialmente de _materia_**.
 
 Esto se resueleve con el siguiente esquema:
+
+<div style="text-align:center">
+<img src="images/FNBC-1.png" alt="DFP" style="width: 280px;"/>
+<img src="images/FNBC-2.png" alt="DFP" style="width: 250px;"/>
+</div>
