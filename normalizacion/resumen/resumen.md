@@ -1,6 +1,6 @@
 # Formas Normales
 
-### 1ra Forma Normal:
+## 1ra Forma Normal:
 
 Se dice que un esquema relacional está en la primera forma normal cuando los campos de todas sus relaciones son atómicos y monovaluados.
 
@@ -32,10 +32,25 @@ En este caso el atributo _nombre_depto_ depende parcialmente de la clave primari
 
 Por definición, _asignatura_ es un **atributo primo** de la relación, por formar parte de la clave primaria.
 
-### 2da Forma Normal:
+## 2da Forma Normal:
 
 Una relación esta en 2da forma normal cuando sus atributos **no primos** tienen **sólo dependencias funcionales completas con la clave primaria**. 
 
 En resumen, ningún atributo que no forme parte de la clave primaria puede depender parcialmente de la clave primaria.
 
-### 3ra Forma Normal
+El ejemplo de la **DPF** anterior se respuelve separando la relacion en las dos siguientes:
+
+docente_asignatura: _(nombre_profesor, asignatura)_
+
+asignatura_depto: _(asignatura, nombre_depto)_
+
+### Descomposiciones
+
+La solución anterior a la _Dependencia funcional parcial_ consiste en una **descomposición** de la relación original en dos relaciones.
+
+Una descomposición se llama **equivalente** cuando:
+
+- **Preservación de las dependencias:** Todas las dependencias funcionales de la relación original se pueden inferir a partir de las relaciones de la descomposición.
+- **Preservación de la información:** No hay pérdida de información respecto de la relación original.
+
+## 3ra Forma Normal
