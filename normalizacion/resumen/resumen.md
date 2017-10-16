@@ -137,3 +137,26 @@ El siguiente esquema sí respetaria la cuarta forma normal:
 <img src="images/4FN-1.png" alt="4FN-1" style="width: 250px;"/>
 </div>
 
+## Dependencia de junta y 5ta Forma Normal
+
+Una relación **tiene dependencias de junta** cuando **se puede descomponer sin pérdida de información en 2 o más relaciones**.
+
+Ej:
+<div style="text-align:center">
+<img src="images/no-5FN.png" alt="no-5FN" style="width: 300px;"/>
+</div>
+
+Como se verá más adelante, este ejemplo se puede descomponer en 3 relaciones.
+
+
+Nótese que **la dependencia multivaluada es un caso particular de dependencia de junta donde el número de relaciones de la descomposición es 2.**
+
+**Un esquema que respeta la quinta forma normal** es un esquema **cuyas únicas dependencias de junta dependen de atributos superclave.**
+
+El siguiente esquema es un ejemplo de esquema que **respeta la quinta forma normal**:
+
+<div style="text-align:center">
+<img src="images/5FN-2.png" alt="4FN-2" style="width: 200px;"/>
+<img src="images/5FN-3.png" alt="4FN-3" style="width: 200px;"/>
+<img src="images/5FN-1.png" alt="4FN-1" style="width: 200px;"/>
+</div>
