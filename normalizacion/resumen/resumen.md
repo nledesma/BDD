@@ -6,13 +6,15 @@ Se dice que un esquema relacional está en la primera forma normal cuando los ca
 
 Ej de un esquema que NO está en la primera forma normal:
 
-<img src="no-1FN.png" alt="NO-1FN" style="width: 400px;"/>
+<div style="text-align:center"><img src="no-1FN.png" alt="NO-1FN" style="width: 400px;"/></div>
 
 
 Una posible solución:
 
-<img src="1FN-1.png" alt="FN1-1" style="width: 250px;"/>
+<div style="text-align:center">
+<img src="1FN-1.png" alt="FN1-1" style="width: 280px;"/>
 <img src="1FN-2.png" alt="FN1-2" style="width: 280px;"/>
+</div>
 
 Se muda el atributo multivaluado a una nueva relación junto con la clave de la relación original.
 
@@ -26,7 +28,7 @@ Hay **DFP** cuando un atributo depende de un subconjunto del conjunto de la clav
 
 Ej:
 
-<img src="DFP.png" alt="DFP" style="width: 250px;"/>
+<div style="text-align:center"><img src="DFP.png" alt="DFP" style="width: 280px;"/></div>
 
 En este caso el atributo _nombre_depto_ depende parcialmente de la clave primaria _(nombre_profesor, asignatura)_, porque sólo depende da la _asignatura_.
 
@@ -54,3 +56,9 @@ Una descomposición se llama **equivalente** cuando:
 - **Preservación de la información:** No hay pérdida de información respecto de la relación original.
 
 ## 3ra Forma Normal:
+
+Es cuando un atributo **no primo** (o sea que no forma parte de la PK), depende funcionalmente de otro atributo **no primo**. Esto se denomina como una **dependencia funcional transitiva**.
+
+Ej:
+
+<div style="text-align:center"><img src="DFT.png" alt="DFT" style="width: 600px;align:middle;"/></div>
