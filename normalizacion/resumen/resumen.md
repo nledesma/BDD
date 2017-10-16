@@ -42,9 +42,9 @@ En resumen, ningún atributo que no forme parte de la clave primaria puede depen
 
 El ejemplo de la **DPF** anterior se respuelve separando la relacion en las dos siguientes:
 
-docente_asignatura: _(nombre_profesor, asignatura)_
+<div style="text-align:center"><img src="2FN.png" alt="DFP" style="width: 350px;"/>
+</div>
 
-asignatura_depto: _(asignatura, nombre_depto)_
 
 ### Descomposiciones
 
@@ -68,3 +68,5 @@ Ej:
 En este caso, la clave primaria sería _(nro_factura, nro_item)_.
 
 El atributo _nro_producto_ depende funcionalmente de la clave primaria (completa), pero a su vez también _nombre_producto_ depende funcionalmente de _nro_producto_. Esto implica una **dependencia funcional transitiva.**
+
+
