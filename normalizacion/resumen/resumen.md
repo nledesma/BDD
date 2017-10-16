@@ -6,7 +6,9 @@ Se dice que un esquema relacional está en la primera forma normal cuando los ca
 
 Ej de un esquema que NO está en la primera forma normal:
 
-<div style="text-align:center"><img src="no-1FN.png" alt="NO-1FN" style="width: 400px;"/></div>
+<div style="text-align:center">
+<img src="no-1FN.png" alt="NO-1FN" style="width: 400px;"/>
+</div>
 
 
 Una posible solución:
@@ -28,7 +30,9 @@ Hay **DFP** cuando un atributo depende de un subconjunto del conjunto de la clav
 
 Ej:
 
-<div style="text-align:center"><img src="DFP.png" alt="DFP" style="width: 280px;"/></div>
+<div style="text-align:center">
+<img src="DFP.png" alt="DFP" style="width: 280px;"/>
+</div>
 
 En este caso el atributo _nombre_depto_ depende parcialmente de la clave primaria _(nombre_profesor, asignatura)_, porque sólo depende da la _asignatura_.
 
@@ -40,9 +44,10 @@ Una relación esta en 2da forma normal cuando sus atributos **no primos** tienen
 
 En resumen, ningún atributo que no forme parte de la clave primaria puede depender parcialmente de la clave primaria.
 
-El ejemplo de la **DPF** anterior se respuelve separando la relacion en las dos siguientes:
+El ejemplo de la **DFP** anterior se respuelve separando la relacion en las dos siguientes:
 
-<div style="text-align:center"><img src="2FN.png" alt="DFP" style="width: 350px;"/>
+<div style="text-align:center">
+<img src="2FN.png" alt="DFP" style="width: 350px;"/>
 </div>
 
 
@@ -62,7 +67,6 @@ Es cuando un atributo **no primo** (o sea que no forma parte de la PK), depende 
 Ej:
 
 <div style="text-align:center"><img src="DFT.png" alt="DFT" style="width: 600px;align:middle;"/>
-
 </div>
 
 En este caso, la clave primaria sería _(nro_factura, nro_item)_.
