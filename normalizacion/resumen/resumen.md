@@ -64,9 +64,9 @@ Una descomposición se llama **equivalente** cuando:
 - **Preservación de las dependencias:** Todas las dependencias funcionales de la relación original se pueden inferir a partir de las relaciones de la descomposición.
 - **Preservación de la información:** No hay pérdida de información respecto de la relación original.
 
-## 3ra Forma Normal:
+## Dependencia funcional transitiva
 
-Es cuando un atributo **no primo** (o sea que no forma parte de la PK, ni de alguna clave candidata), depende funcionalmente de otro atributo **no primo**. Esto se denomina como una **dependencia funcional transitiva**.
+Es cuando un atributo **no primo** (o sea que no forma parte de la PK, ni de alguna clave candidata), depende funcionalmente de otro atributo **no primo**. Esto se denomina como una **dependencia funcional transitiva** entre atributos no primos.
 
 Ej:
 
@@ -77,7 +77,10 @@ En este caso, la clave primaria sería _(nro_factura, nro_item)_.
 
 El atributo _cod_producto_ depende funcionalmente de la clave primaria (completa), pero a su vez también _nombre_producto_ depende funcionalmente de _cod_producto_. Esto implica una **dependencia funcional transitiva.**
 
-Para resolver este caso se haría la siguiente descomposición:
+
+## 3ra Forma Normal
+
+Un esquema que respeta la 3FN es un esquema **sin dependencias funcionales transitivas entre atributos no primos**. En el caso anterior se haría la siguiente descomposición:
 
 <div style="text-align:center">
 <img src="images/3FN.png" alt="DFP" style="width: 350px;"/>
@@ -85,3 +88,6 @@ Para resolver este caso se haría la siguiente descomposición:
 
 Cabe mencionar que en esta descomposición _cod_producto_ termina siendo una FK de la nueva relación.
 
+## Forma Normal de Boyce-Codd (FNBC)
+
+La condición es similar a la de la 3FN, con la salvedad de que esta no permite dependencias transitivas entre atributos primos tampoco. 
