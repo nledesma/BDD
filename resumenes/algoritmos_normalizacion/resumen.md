@@ -64,15 +64,15 @@ _F2 : {A→B, A→D, B→C, B→D, A→E}_
 
 Analizo para cada DF X→Y si Y⊂X<sup>+</sup><sub>F2-{X→Y}</sub>
 
-A<sup>+</sup><sub>F2-{A→B}: A, D, E 
+A<sup>+</sup><sub>F2-{A→B}</sub>: A, D, E 
 
-A<sup>+</sup><sub>F2-{A→D}: A, B, D, E **(contiene a D, es redundante)**
+A<sup>+</sup><sub>F2-{A→D}</sub>: A, B, D, E **(contiene a D, es redundante)**
 
-B<sup>+</sup><sub>F2-{B→C}: B, D
+B<sup>+</sup><sub>F2-{B→C}</sub>: B, D
 
-B<sup>+</sup><sub>F2-{B→D}: B, C
+B<sup>+</sup><sub>F2-{B→D}</sub>: B, C
 
-A<sup>+</sup><sub>F2-{A→E}: A, B, D
+A<sup>+</sup><sub>F2-{A→E}</sub>: A, B, D
 
 Entonces:
 
