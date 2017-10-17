@@ -20,7 +20,7 @@ Ejemplo de uso:
 
 ## Reglas inferidas de los axiomas
 
-- **Union:** : X → Y ∧ X → Z ⇒ X → YZ
+- **Unión:** : X → Y ∧ X → Z ⇒ X → YZ
 - **Pseudotransitividad:** ∀W : X → Y ∧ YW → Z ⇒ XW → Z
 - **Descomposición:** X → YZ ⇒ X → Y ∧ X → Z
 
