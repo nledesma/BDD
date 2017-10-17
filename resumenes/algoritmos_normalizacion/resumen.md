@@ -84,19 +84,21 @@ Dada una relacion R = {A, B, C, D, E, F, G}
 
 F = { AB→F, D→A, E→D, D→E, CF→B, B→C }
 
-**1.- Encontrar un cubrimiento minimal de F. Se toma como conjunto de entrada la relacion completa**
+**1.- Encontrar un cubrimiento minimal de F. Se toma como conjunto de entrada la relación completa**
 
 _F<sub>m</sub> = { AB→F, D→A, E→D, D→E, CF→B, B→C } (ya era minimal)_
 
-_C<sub>a</sub>1 = {A, B, C, D, E, F, G}_
+_C<sub>a</sub> = {A, B, C, D, E, F, G}_
 
 **2.- Detectar atributos independientes del cálculo A<sub>i</sub> (aquellos que
-no están en ninguna Df), eliminar del conjunto, C<sub>a</sub> = C<sub>a</sub> – A<sub>i</sub>  y reservar
+no están en ninguna DF), eliminar del conjunto, C<sub>a</sub> = C<sub>a</sub> – A<sub>i</sub>  y reservar
 para después.**
 
 _A<sub>i</sub> = { G }_
 
-_C<sub>a</sub>2 = { A, B, C, D, E, F }_
+_F<sub>m</sub> = { AB→F, D→A, E→D, D→E, CF→B, B→C }_
+
+_C<sub>a</sub> = { A, B, C, D, E, F }_
 
 **3.- Separar atributos equivalentes. A<sub>e</sub> por un lado y C<sub>a</sub> - A<sub>e</sub> por el otro. Se reemplaza en F<sub>m</sub> el atributo quitado por su equivalente remanente.**
 
@@ -104,9 +106,10 @@ E equivale a D
 
 _A<sub>e</sub> = { D }_
 
-_C<sub>a</sub>2 = { A, B, C, E, F }_
-
 _F<sub>m</sub> = { AB→F, E→A, CF→B, B→C }_
+
+_C<sub>a</sub> = { A, B, C, E, F }_
+
 
 **4.- Se forma K con todos los elementos que sólo estén del lado izquierdo (implicantes) en el conjunto F<sub>m</sub>. Si K<sup>+</sup><sub>F<sub>m</sub></sub> forma R, K es clave.**
 
@@ -114,11 +117,10 @@ Sólo E cumple con la condición de ser sólo implicante.
 
 _K = { E }_
 
-K<sup>+</sup><sub>F<sub>m</sub></sub> = { A, E }
-
-Entonces E no es clave
-
 _F<sub>m</sub> = { AB→F, E→A, CF→B, B→C }_
+
+K<sup>+</sup><sub>F<sub>m</sub></sub> = { A, E } => E no es clave
+
 
 **5.- Se forma A<sub>id</sub> con los elementos que estén en ambos lados de las dependencias de F<sub>m</sub> (que sean implicantes e implicados).**
 
